@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P_335_MobileApp_PassionLecture.ReadBook"
+             Title="ReadBook">
+    <VerticalStackLayout BackgroundColor="#5DA399">
+        <HorizontalStackLayout BackgroundColor="#9BBEC7" HeightRequest="120" WidthRequest="415">
+            <Label Text="OnePiece" FontSize="35" SemanticProperties.HeadingLevel="Level1" VerticalOptions="Center" Margin="120, 0, 0, 0"/>
+        </HorizontalStackLayout>
+
+        <Label Text="Page 1" TextColor="White" SemanticProperties.HeadingLevel="Level2" FontSize="35" HorizontalOptions="Center" Margin="0, 30, 0, 0"/>
+        
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="240">
+            <Button CornerRadius="90" Text="&lt;" BackgroundColor="#BD8B9C"/>
+            <Button CornerRadius="90" Text=">" BackgroundColor="#BD8B9C"/>
+        </HorizontalStackLayout>
+
+        <Label Text="Lorem ipsum aaaaa" BackgroundColor="#414770" WidthRequest="320" HeightRequest="420" Margin="0, 40, 0, 0" TextColor="White" Padding="20"/>
+    </VerticalStackLayout>
+</ContentPage>
