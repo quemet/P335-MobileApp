@@ -3,18 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="P_335_MobileApp_PassionLecture.ReadBook"
              Title="ReadBook">
-    <VerticalStackLayout BackgroundColor="#5DA399">
-        <HorizontalStackLayout BackgroundColor="#9BBEC7" HeightRequest="120" WidthRequest="415">
-            <Label Text="OnePiece" FontSize="35" SemanticProperties.HeadingLevel="Level1" VerticalOptions="Center" Margin="120, 0, 0, 0"/>
-        </HorizontalStackLayout>
-
-        <Label Text="Page 1" TextColor="White" SemanticProperties.HeadingLevel="Level2" FontSize="35" HorizontalOptions="Center" Margin="0, 30, 0, 0"/>
-        
-        <HorizontalStackLayout HorizontalOptions="Center" Spacing="240">
-            <Button CornerRadius="90" Text="&lt;" BackgroundColor="#BD8B9C"/>
-            <Button CornerRadius="90" Text=">" BackgroundColor="#BD8B9C"/>
-        </HorizontalStackLayout>
-
-        <Label Text="Lorem ipsum aaaaa" BackgroundColor="#414770" WidthRequest="320" HeightRequest="420" Margin="0, 40, 0, 0" TextColor="White" Padding="20"/>
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#5DA399">
+            <Label x:Name="TitleLabel" BackgroundColor="#9BBEC7" HeightRequest="150" Margin="0, 0, 0, 30" TextColor="Black" FontSize="35" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+            <Button x:Name="btn" Text="Retour au menu" Clicked="OnBackButtonClicked" />
+            <WebView x:Name="ContentWebView" BackgroundColor="#5DA399" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
